@@ -1,6 +1,10 @@
 $main-font:'Montserrat', sans-serif;
 $title-font:'Playfair Display', serif;
 
+body {
+  max-width: 1424px;
+  margin: auto;
+}
 
 a {
   text-decoration:none;
@@ -8,7 +12,7 @@ a {
 
 img{
   max-width: 100%;
-  height:auto;
+  height:100%;
 }
 
 .container {
@@ -17,10 +21,19 @@ img{
   margin: 0 auto;
 }
 
-.page-header .container{
+.bg-image {
+  background-image: url("../images/background_Image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent;
 }
 .brand, .brand img {
   display: block;
